@@ -1,0 +1,22 @@
+{
+  "name": "algorithm-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "binary-gap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idanb11/algorithm-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idanb11/algorithm-practice/issues"
+  },
+  "homepage": "https://github.com/idanb11/algorithm-practice#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
