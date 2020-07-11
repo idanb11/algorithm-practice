@@ -64,15 +64,36 @@ function solution3(N) {
   return 0;
 }
 
+function solution4(N) {
+  n = Number(N);
+  n = (n >>> 0).toString(2);
+
+  var re = /0+/g, match, max = 0;
+  
+  do {
+      match = re.exec(n);
+      if (match && match[0].length > max) {
+          max = match[0].length;
+      }
+  } while (match);
+  return max;
+}
+
 suite1
-  .add("solution(12345249)", function () {
-    solution(12345249);
+  .add("solution2(1610612737)", function () {
+    solution2(1610612737);
   })
-  .add("solution2(12345249)", function () {
-    solution2(12345249);
+  .add("solution3(1610612737)", function () {
+    solution3(1610612737);
   })
-  .add("solution3(12345249)", function () {
-    solution3(12345249);
+  .add("solution4(1610612737)", function () {
+    solution4(1610612737);
+  })
+  .add("solution(1610612737)", function () {
+    solution(1610612737);
+  })
+  .on("start", function (event) {
+    console.log(`starting on ${new Date(event.timeStamp)}`);
   })
   // add listeners
   .on("cycle", function (event) {
