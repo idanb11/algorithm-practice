@@ -1,4 +1,3 @@
-
 const assert = require('assert');
 
 function solution(A, K) {

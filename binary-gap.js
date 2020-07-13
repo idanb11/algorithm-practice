@@ -65,7 +65,7 @@ function solution3(N) {
 }
 
 function solution4(N) {
-  n = Number(N);
+  let n = Number(N);
   n = (n >>> 0).toString(2);
 
   var re = /0+/g, match, max = 0;

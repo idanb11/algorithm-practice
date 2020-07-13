@@ -1,6 +1,6 @@
 function solution(X, A) {
   let holdValues = new Set();
-  for (i = 0; i < A.length; i++) {
+  for (let i = 0; i < A.length; i++) {
     holdValues.add(A[i]);
     if (holdValues.size == X) return i;
   }
