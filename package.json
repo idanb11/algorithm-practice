@@ -18,5 +18,9 @@
   "homepage": "https://github.com/idanb11/algorithm-practice#readme",
   "dependencies": {
     "benchmark": "^2.1.4"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
