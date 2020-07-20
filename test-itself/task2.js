@@ -1,7 +1,7 @@
 const assert = require("assert").strict;
 
 function solution(S) {
-  const numOfA = S.split("").reduce((acc, x) => (x === "a" ? acc + 1 : acc), 0);
+  const numOfA = (S.match(/a/g) || []).length;
   let counter = 0;
 
   if (S.length < 3 || numOfA % 3 !== 0) {
@@ -12,55 +12,40 @@ function solution(S) {
     return counter;
   }
 
-  let pointer1 = 0;
-  let pointer2 = 1;
-  let pointer3 = 2;
+  let pointer1 = 1;
+  let pointer2 = 2;
   const len = S.length;
 
-  while (pointer1 < len - 2) {
-    console.log(pointer1, pointer2, pointer3);
-
-    if (isValidSlice(S, pointer1, pointer2, pointer3)) {
+  while (pointer1 < len - 1) {
+    if (isValidSlice(S, pointer1, pointer2)) {
       counter++;
     }
-    [pointer1, pointer2, pointer3] = updatePointers(
-      pointer1,
-      pointer2,
-      pointer3,
-      len
-    );
+
+    if (pointer2 >= len - 1) {
+      pointer1++;
+      pointer2 = pointer1 + 1;
+    } else {
+      pointer2++;
+    }
   }
 
   console.log(counter);
   return counter;
 }
 
-function isValidSlice(S, p1, p2, p3) {
-  const p1Set = new Set(S.slice(0, p2));
-  const p2Set = new Set(S.slice(p1, p2));
-  const p3Set = new Set(S.slice(0, p1));
+function isValidSlice(S, p1, p2) {
+  const pcs1 = S.slice(0, p1);
+  const pcs2 = S.slice(p1, p2);
+  const pcs3 = S.slice(p2);
 
-
-  return true;
+  return (
+    (pcs1.match(/a/g) || []).length === (pcs2.match(/a/g) || []).length &&
+    (pcs2.match(/a/g) || []).length === (pcs3.match(/a/g) || []).length
+  );
 }
 
-function updatePointers(x, y, z, l) {
-  if (z >= l - 1) {
-    y++;
-    z = y + 1;
-    if (y >= l - 1) {
-      x++;
-      y = x + 1;
-      z = y + 1;
-    }
-  } else {
-    z++;
-  }
+assert.strictEqual(solution("babaa"), 2);
+assert.strictEqual(solution("ababa"), 4);
+assert.strictEqual(solution("aba"), 0);
+assert.strictEqual(solution("bbbbb"), 6);
 
-  return [x, y, z];
-}
-
-solution("babaa");
-// solution("ababa");
-// solution("aba");
-// solution("bbbbb");
