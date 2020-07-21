@@ -13,7 +13,7 @@ function solution(A, K) {
       pointer2++;
       replaceableChars--;
     } else {
-      maxResult = Math.max(maxResult, pointer2 - pointer1)
+      maxResult = Math.max(maxResult, pointer2 - pointer1);
       if (pointer2 === A.length) {
         break;
       }
