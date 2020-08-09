@@ -14,10 +14,16 @@ function mergeArrays(arry1, arry2) {
       index2++;
     }
   }
+  console.log(result);
   return result;
 }
 
 assert.deepStrictEqual(
   mergeArrays([3, 4, 6, 10, 11, 15], [1, 5, 8, 12, 14, 19]),
   [1, 3, 4, 5, 6, 8, 10, 11, 12, 14, 15, 19]
+);
+
+assert.deepStrictEqual(
+  mergeArrays([2, 16], [1, 5, 8, 12, 14, 19]),
+  [1, 2, 5, 8, 12, 14, 16, 19]
 );
