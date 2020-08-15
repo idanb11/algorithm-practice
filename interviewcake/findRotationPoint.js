@@ -1,19 +1,25 @@
 function findRotationPoint(arr) {
+  let guessValue = arr[0];
   let startIndex = 0;
   let endIndex = arr.length - 1;
-  let guessValue = arr[0];
-  while (startIndex + 1 < endIndex) {
-    const guessIndex = startIndex + Math.floor((endIndex - startIndex) / 2);
+  while (startIndex < endIndex) {
+    const guessIndex = Math.floor(startIndex + (endIndex - startIndex) / 2);
+    guessValue = arr[guessIndex];
 
     if (arr[guessIndex] > guessValue) {
       endIndex = guessIndex;
     } else {
       startIndex = guessIndex;
     }
-    guessValue = arr[guessIndex];
+
+    if (startIndex + 1 === endIndex) {
+      // Between floor and ceiling is where we flipped to the beginning
+      // so ceiling is alphabetically first
+      break;
+    }
   }
 
-  console.log(guessValue);
+  console.log(arr[endIndex]);
   return guessValue;
 }
 
