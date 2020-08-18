@@ -18,10 +18,11 @@
   "homepage": "https://github.com/idanb11/algorithm-practice#readme",
   "dependencies": {
     "benchmark": "^2.1.4",
-    "binary-tree-printer": "0.0.3"
+    "binary-tree-printer": "0.0.3",
+    "print-linked-list": "^1.0.4"
   },
   "devDependencies": {
-    "eslint": "^7.6.0",
+    "eslint": "^7.7.0",
     "eslint-config-google": "^0.14.0"
   }
 }

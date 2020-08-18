@@ -46,35 +46,45 @@ const assert = require("assert").strict;
 
 function solution(S) {
   const stack = [];
-  const obj = { ")": "(", "}": "{", "]": "[" };
+  const obj = {")": "(", "}": "{", "]": "["};
+  let counter = 0;
+
+  const openers = new Set(Object.values(obj));
+  const closers = new Set(Object.keys(obj));
 
   for (let i = 0; i < S.length; i++) {
-    if (S[i] === "(" || S[i] === "{" || S[i] === "[") {
+    if (openers.has(S[i])) {
       stack.push(S[i]);
-    } else {
+    } else if (closers.has(S[i])) {
       const last = stack.pop();
-      if (obj[S[i]] !== last) return 0;
+      console.log(last, obj[S[i]]);
+      if (obj[S[i]] !== last) return false;
     }
+    if (S[i] === "|") {
+      counter++;
+    }
+
+    console.log(stack);
   }
-  return stack.length === 0 ? 1 : 0;
+  return stack.length === 0 && counter % 2 === 0;
 }
 
-assert.strictEqual(solution("{[()()]}"), 1);
+assert.strictEqual(solution("{[|(ggg)||()|]}"), true);
 
-assert.strictEqual(solution("([)()]"), 0);
+// assert.strictEqual(solution("([)()]"), false);
 
-assert.strictEqual(solution(""), 1);
+// assert.strictEqual(solution(""), true);
 
-assert.strictEqual(solution(")("), 0);
+// assert.strictEqual(solution(")("), false);
 
-assert.strictEqual(solution("()(()())((()())(()()))"), 1);
+// assert.strictEqual(solution("()(()())((()())(()()))"), true);
 
-assert.strictEqual(solution("({{({}[]{})}}[]{})"), 1);
+// assert.strictEqual(solution("({{({}[]{})}}[]{})"), true);
 
-assert.strictEqual(solution("))(("), 0);
+// assert.strictEqual(solution("))(("), false);
 
-assert.strictEqual(solution("}}{{"), 0);
+// assert.strictEqual(solution("}}{{"), false);
 
-assert.strictEqual(solution("})({"), 0);
+// assert.strictEqual(solution("})({"), false);
 
-assert.strictEqual(solution("(}{)"), 0);
+// assert.strictEqual(solution("(}{)"), false);
