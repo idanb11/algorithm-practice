@@ -16,13 +16,13 @@ class BinaryTreeNode {
   }
 }
 
-function inOrder(node) {
-  if (node !== null) {
-    inOrder(node.left);
-    console.log(node.data);
-    inOrder(node.right);
-  }
-}
+// function inOrder(node) {
+//   if (node !== null) {
+//     inOrder(node.left);
+//     console.log(node.data);
+//     inOrder(node.right);
+//   }
+// }
 
 
 

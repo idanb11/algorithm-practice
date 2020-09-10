@@ -5,46 +5,17 @@ function reverseLinkedList(head) {
     return head;
   }
 
-  let currentNode = head; // a
-  let prevNode;
-  // a->b->c
-  // c->b->a
+  let currentNode = head;
+  let prevNode = null;
 
-  // a->b
-  // b->a
-
-  while (currentNode.next) {
-    // currentNode // a
-    const nextNode = currentNode.next; // b
-    if (currentNode === head) {
-      currentNode.next = null;
-    } else {
-      prevNode = currentNode;
-      nextNode.next = prevNode;
-    }
-
+  while (currentNode !== null) {
+    const nextNode = currentNode.next;
+    currentNode.next = prevNode;
+    prevNode = currentNode;
     currentNode = nextNode;
-    printLinkedList(currentNode);
-    // nextNode.next = currentNode;
   }
 
-  // const nextNode = currentNode.next;
-  // let prevNode;
-  // if (currentNode === head) {
-  //   prevNode = null;
-  // } else {
-  //   prevNode = currentNode;
-  // }
-  // nextNode.next = currentNode;
-
-  // if (!nextNode.next) {
-  //   return nextNode;
-  // } else {
-  //   //
-  //   currentNode = nextNode;
-  // }
-  // }
-  // return head;
+  return prevNode;
 }
 
 class LinkedListNode {
@@ -61,7 +32,31 @@ const d = new LinkedListNode("D");
 
 a.next = b;
 b.next = c;
-// c.next = d;
-// d.next = null;
+c.next = d;
+d.next = null;
 
-printLinkedList(reverseLinkedList(a));
+// printLinkedList(reverseLinkedList(a));
+
+
+function reverseLinkedListRecursion(head) {
+  if (!head || !head.next) {
+    return head;
+  }
+
+  
+
+  const newHeadNode = reverseLinkedListRecursion(head.next);
+  console.log(newHeadNode);
+  // change references for middle chain
+  console.log(head);
+  head.next.next = head;
+  console.log(head);
+  head.next = null;
+  console.log(head);
+  console.log("--------------------\n");
+
+  // send back new head node in every recursion
+  return newHeadNode;
+}
+
+printLinkedList(reverseLinkedListRecursion(a));

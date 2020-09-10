@@ -1,7 +1,6 @@
 const tree1 = require("binary-tree-printer");
 const BinaryTreeNode = require("./binary-tree");
 
-
 function secondLargestItemInBst(tree) {
   const nodes = [];
   nodes.push({node: tree, parent: null});
@@ -31,11 +30,11 @@ const tree = new BinaryTreeNode(100);
 // const node131 = node130.insertRight(131);
 // const node124 = node125.insertLeft(124);
 
-// const node17 = tree.insertLeft(17);
-// const node12 = node17.insertLeft(12);
+const node17 = tree.insertLeft(17);
+const node12 = node17.insertLeft(12);
 // node12.insertLeft(9);
 // node12.insertRight(14);
-// node17.insertRight(23)
+// node17.insertRight(23);
 // // .insertLeft(12).insertRight(23);
 // const node72 = tree.insertRight(72);
 // const node54 = node72.insertLeft(54);
@@ -43,8 +42,6 @@ const tree = new BinaryTreeNode(100);
 // node54.insertRight(67);
 // .insertLeft(54).insertRight(76);
 
-
 console.log(tree1.printAsciiTree(tree));
-
 
 console.log(secondLargestItemInBst(tree));
