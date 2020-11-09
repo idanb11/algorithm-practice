@@ -15,12 +15,9 @@ node80.insertRight(90);
 console.log(tree1.printAsciiTree(tree));
 
 function bstChecker(root) {
-  if (!root) {
-    return;
-  }
-
   const range = [Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER];
   return recurse(root, range);
+
   // const nodes = [[root, range]];
 
   // while (nodes.length) {
@@ -45,12 +42,11 @@ function bstChecker(root) {
 function recurse(node, range) {
   if (!node) return true;
 
-  if (node.value < range[0] || node.value > range[1]) {
+  if (node.val <= range[0] || node.val >= range[1]) {
     return false;
   }
 
-  return recurse(node.left, [range[0], node.value]) && recurse(node.right, [node.value, range[1]])
-
+  return recurse(node.left, [range[0], node.val]) && recurse(node.right, [node.val, range[1]]);
   // if (node.left) {
   //   return recurse(node.left, [range[0], node.value]);
   // }
