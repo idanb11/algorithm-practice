@@ -2,43 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c43e1d6d-cc8e-47e6-a1f9-e6ffefab626e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/interviewcake/binary-tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/interviewcake/binary-tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interviewcake/reverse-linked-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/interviewcake/reverse-linked-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/combinationSum4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/findAnagrams.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/longest-palindrome-in-specified-string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/maxProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/numMagicSquaresInside.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/valid-palindrome-ii.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interviewcake/balanced-binary-tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/interviewcake/balanced-binary-tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/coin-change.js" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/coin-change.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/longest-palindrome.js" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/longest-palindrome.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1gy1RKTBIbmcpxiTyFBbstz7r0p" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.6.2" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.6.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="C:\Users\idan\AppData\Roaming\npm\node_modules\npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+  <component name="RunManager" selected="Node.js.numMagicSquaresInside.js">
+    <configuration name="longest-palindrome-in-specified-string.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/leetcode/longest-palindrome-in-specified-string.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method v="2" />
+    </configuration>
+    <configuration name="numMagicSquaresInside.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/leetcode/numMagicSquaresInside.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method v="2" />
+    </configuration>
+    <configuration name="valid-palindrome-ii.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/leetcode/valid-palindrome-ii.js" working-dir="$PROJECT_DIR$/leetcode">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.numMagicSquaresInside.js" />
+        <item itemvalue="Node.js.valid-palindrome-ii.js" />
+        <item itemvalue="Node.js.longest-palindrome-in-specified-string.js" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1599072074014">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="321" y="77" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680@0.0.1280.680" timestamp="1599072074014" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1599072167370">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1599072167370" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/leetcode/valid-palindrome-ii.js</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -21,6 +21,8 @@ const coinChange = function (coins, amount) {
       return counter;
     }
   }
+
+  console.log(sum, counter);
   return -1;
 };
 

@@ -16,7 +16,7 @@ const longestPalindrome = function (s) {
     map[element] = (map[element] || 0) + 1;
   }
 
-  
+
   const values = Object.values(map).sort((a, b) => b - a);
   // console.log(values);
 

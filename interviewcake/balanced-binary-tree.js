@@ -49,7 +49,7 @@ node17.insertRight(23);
 const node72 = tree.insertRight(72);
 const node54 = node72.insertLeft(54);
 // const node76 = node72.insertRight(76);
-const node67 = node54.insertRight(67).insertRight(76).insertRight(76).insertRight(76);
+// const node67 = node54.insertRight(67).insertRight(76).insertRight(76).insertRight(76);
 
 // const node30 = tree.insertLeft(30);
 // const node80 = tree.insertRight(80);
