@@ -2,7 +2,7 @@
   "name": "algorithm-practice",
   "version": "1.0.0",
   "description": "",
-  "main": "binary-gap.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,7 +20,7 @@
     "@types/node": "^20.4.2",
     "benchmark": "^2.1.4",
     "binary-tree-printer": "0.0.3",
-    "eslint": "^8.44.0",
+    "eslint": "^8.45.0",
     "print-linked-list": "^1.0.4"
   },
   "devDependencies": {
